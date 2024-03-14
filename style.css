@@ -16,26 +16,24 @@
    position: absolute; 
    bottom: 0;
    width: 80px;
-   right: -80px;
-   left: 120px;
-   animation: canoanimation 2s infinite linear;
+   animation: canoanimation 1.5s infinite linear;
 }
 
 .mario {
-    width: 150;
+    width: 150px;
     position: absolute;
     bottom: 0;
 
 }
 
-.pulo {
-    animation: pulo 500ms ease-out;
+.jump { 
+    animation: jump 500ms ease-out;
 }
 
 .clouds {
-    width: 500px;
+    width: 550px;
     position: absolute;
-    animation: nuvemanimation 10s infinite linear;
+    animation: nuvemanimation 20s infinite linear;
 }
 
 @keyframes canoanimation {
@@ -47,7 +45,7 @@
     }
 }
 
-@keyframes pulo {
+@keyframes jump {
     0% {
         bottom: 0;
     }
@@ -68,7 +66,7 @@
 
 @keyframes nuvemanimation{
     from {
-        right: -550;
+        right: -550px;
     }
     to {
         right: 100%;
